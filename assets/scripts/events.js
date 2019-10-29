@@ -19,5 +19,33 @@ const getQuestions = function () {
   request.send()
 }
 
+const displayQuestion = function (question) {
+  questionTitleElement.innerHTML = ""
+  answersElement.innerHTML = ""
+
+  // question.title is accessing the JSON
+  let questionTitle = document.createTextNode(question.title)
+  questionTitleElement.appendChild(questionTitle)
+
+  question.answers.forEach(answer => {
+    let label = document.createElement("label")
+    let answerInput = document.createElement("input")
+
+    answerInput.setAttribute("type", "radio")
+    answerInput.setAttribute("name", "answer")
+
+    // answer.id accesses the JSON
+    answerInput.setAttribute("value", answer.id)
+    answerInput.classList.add("answer")
+
+    let answerTitle = document.createTextNode(answer.answer)
+    label.appendChild(answerInput)
+    label.appendChild(answerTitle)
+
+    answersElement.appendChild(label)
+  })
+}
+
 // Initialization
 getQuestions()
+displayQuestion(questions[currentQuestion])
