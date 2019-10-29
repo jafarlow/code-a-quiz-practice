@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Quiz</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,17 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+
+      <main class="quiz">
+        <section class="question">
+          <h3 class="question-title" id="title"></h3>
+          <div class="question-answers" id="answers"></div>
+          <div class="question-actions">
+            <button type="button" name="button" class="button" id="action-button"></button>
+          </div>
+        </section>
+      </main>
+
+      <script type="text/javascript" src="./assets/scripts/events.js"></script>
     </body>
 </html>
