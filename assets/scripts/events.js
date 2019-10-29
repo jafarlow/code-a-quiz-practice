@@ -11,11 +11,13 @@ const getQuestions = function () {
   request.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       questions = JSON.parse(this.responseText).questions
-      console.log(questions);
+      questionsCount = questions.length
+      currentQuestion = 0
     }
   }
   request.open("GET", "./assets/questions.json", false)
   request.send()
 }
 
+// Initialization
 getQuestions()
