@@ -1,1 +1,44 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .question {
+    width: 600px;
+
+    &-answers {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+
+      label {
+        padding: 1rem;
+        margin: 0.33rem 0;
+        background-color: #c4c4c4;
+
+        &.correct {
+          background-color: #24a484;
+        }
+
+        &.incorrect {
+          background-color: #a41e2d;
+        }
+      }
+    }
+
+    &-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
