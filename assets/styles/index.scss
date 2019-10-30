@@ -39,6 +39,10 @@ body {
     &-actions {
       display: flex;
       justify-content: flex-end;
+      }
     }
   }
+
+  .hide {
+    display: none;
 }
