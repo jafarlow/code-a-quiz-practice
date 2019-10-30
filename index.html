@@ -14,13 +14,17 @@
     <body>
 
       <main class="quiz">
-        <section class="question">
+        <section class="question" id="question-element">
           <h3 class="question-title" id="title"></h3>
           <div class="question-answers" id="answers"></div>
           <div class="question-actions">
             <button type="button" name="button" class="button" id="action-button">Submit</button>
+            <button type="button" name="button" class="button hide" id="next-button">Next Question</button>
           </div>
         </section>
+        <div class="score hide" id="scores">
+          You scored: <span id=score></span>
+        </div>
       </main>
 
       <script type="text/javascript" src="./assets/scripts/events.js"></script>
