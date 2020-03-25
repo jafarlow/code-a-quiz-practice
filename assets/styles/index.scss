@@ -1,8 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
+$blue: #111f5a;
+$bluegray: #b5bcdd;
+$correct: #24a484;
+$wrong: #a41e2d;
+$dark: #11131c;
 
 body {
   margin: 0;
-  background-color: #f3f3f3;
+  background-color: $blue;
 }
 
 .quiz {
@@ -12,9 +17,30 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  color: $bluegray;
+
+  h1 {
+    margin: auto auto 0 auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow:
+      -0.0625rem -0.0625rem 0 $dark,
+      0.0625rem -0.0625rem 0 $dark,
+      -0.0625rem 0.0625rem 0 $dark,
+      0.0625rem 0.0625rem 0 $dark;  }
 
   .question {
     width: 600px;
+    margin: 1rem auto auto auto;
+
+    .question-title {
+      text-align: center;
+      color: #f3f3f3;
+      text-shadow:
+        -0.03125rem -0.03125rem 0 $dark,
+        0.03125rem -0.03125rem 0 $dark,
+        -0.03125rem 0.03125rem 0 $dark,
+        0.03125rem 0.03125rem 0 $dark;    }
 
     &-answers {
       display: flex;
@@ -24,14 +50,18 @@ body {
       label {
         padding: 1rem;
         margin: 0.33rem 0;
-        background-color: #c4c4c4;
+        color: $dark;
+        background-color: $bluegray;
+        font-weight: bold;
 
         &.correct {
-          background-color: #24a484;
+          background-color: $correct;
+          color: $bluegray;
         }
 
         &.incorrect {
-          background-color: #a41e2d;
+          background-color: $wrong;
+          color: $bluegray;
         }
       }
     }
@@ -43,6 +73,23 @@ body {
     }
   }
 
+  .score {
+    margin: 1rem auto auto auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
   .hide {
     display: none;
+}
+
+button {
+  border-radius: 0.5rem;
+  font-weight: bold;
+  background-color: lightblue;
+  color: $dark;
+}
+
+input.answer {
+  margin-right: 1rem;
 }
