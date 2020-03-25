@@ -56,6 +56,143 @@
         }
       ],
       "correct": "3"
+    },
+    {
+      "id": "3",
+      "title": "Where is the tower of Orthanc located?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "Isengard"
+        },
+        {
+          "id": "1",
+          "answer": "Minas Morgul"
+        },
+        {
+          "id": "2",
+          "answer": "Minas Tirith"
+        }
+      ],
+      "correct": "0"
+    },
+    {
+      "id": "4",
+      "title": "Who listed below was not a ring-bearer?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "Frodo Baggins"
+        },
+        {
+          "id": "1",
+          "answer": "Gandalf the Grey"
+        },
+        {
+          "id": "2",
+          "answer": "Bilbo Baggins"
+        },
+        {
+          "id": "3",
+          "answer": "Samwise Gamgee"
+        }
+      ],
+      "correct": "1"
+    },
+    {
+      "id": "5",
+      "title": "Complete the following phrase. 'Fool of a...'",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "Brandybuck!"
+        },
+        {
+          "id": "1",
+          "answer": "Baggins!"
+        },
+        {
+          "id": "2",
+          "answer": "Took!"
+        }
+      ],
+      "correct": "2"
+    },
+    {
+      "id": "6",
+      "title": "What is the capital city of Rohan?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "Edoras"
+        },
+        {
+          "id": "1",
+          "answer": "Esgaroth"
+        },
+        {
+          "id": "2",
+          "answer": "Minas Tirith"
+        }
+      ],
+      "correct": "0"
+    },
+    {
+      "id": "7",
+      "title": "What is the name of the inn where Frodo was supposed to meet Gandalf?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "The Mounted Mare"
+        },
+        {
+          "id": "1",
+          "answer": "The Galloping Gelding"
+        },
+        {
+          "id": "2",
+          "answer": "The Prancing Pony"
+        }
+      ],
+      "correct": "2"
+    },
+    {
+      "id": "8",
+      "title": "True or false: Saruman was the chief of the wizards.",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "True"
+        },
+        {
+          "id": "1",
+          "answer": "False"
+        }
+      ],
+      "correct": "0"
+    },
+    {
+      "id": "9",
+      "title": "How many dwarves did Bilbo travel with in 'The Hobbit'?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "12"
+        },
+        {
+          "id": "1",
+          "answer": "9"
+        },
+        {
+          "id": "2",
+          "answer": "15"
+        },
+        {
+          "id": "3",
+          "answer": "13"
+        }
+      ],
+      "correct": "3"
     }
   ]
 }

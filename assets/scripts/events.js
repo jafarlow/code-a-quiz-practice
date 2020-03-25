@@ -7,6 +7,7 @@ let questionTitleElement = document.getElementById("title")
 let answersElement = document.getElementById("answers")
 let actionButton = document.getElementById("action-button")
 let nextButton = document.getElementById("next-button")
+let resetButton = document.getElementById("reset-button")
 
 const getQuestions = function () {
   let request = new XMLHttpRequest()
@@ -78,6 +79,7 @@ nextButton.addEventListener("click", function () {
     document.getElementById("question-element").classList.add("hide")
     document.getElementById("scores").classList.remove("hide")
     document.getElementById("score").innerHTML = score + "/" + questionsCount
+    resetButton.classList.remove("hide")
     return
   }
   displayQuestion(questions[currentQuestion])
