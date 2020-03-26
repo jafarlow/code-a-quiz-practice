@@ -10,8 +10,11 @@ let nextButton = document.getElementById("next-button")
 let resetButton = document.getElementById("reset-button")
 
 const getQuestions = function () {
+  // "request" below is often seen as "xhr"
   let request = new XMLHttpRequest()
   request.onreadystatechange = function () {
+    // readyState status code 4 means Done -- "The operation is complete", and could be success or fail
+    // it's paired with html code 200, which does mean success
     if (this.readyState == 4 && this.status == 200) {
       questions = JSON.parse(this.responseText).questions
       questionsCount = questions.length
