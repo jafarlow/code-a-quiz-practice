@@ -5,6 +5,17 @@ $correct: #24a484;
 $wrong: #a41e2d;
 $dark: #11131c;
 
+// mixed use of interpolation is to prevent the '-' being a
+//   mathematical opearator. interpolation is not needed for
+//   positive values
+@mixin text-shadow($x, $y, $blur, $color) {
+  text-shadow:
+    -#{$x} -#{$y} $blur $color,
+    $x -#{$y} $blur $color,
+    -#{$x} $y $blur $color,
+    $x $y $blur $color,
+}
+
 body {
   margin: 0;
   background-color: $blue;
@@ -23,11 +34,8 @@ body {
     margin: 12rem auto 0 auto;
     font-size: 3rem;
     font-weight: bold;
-    text-shadow:
-      -0.0625rem -0.0625rem 0 $dark,
-      0.0625rem -0.0625rem 0 $dark,
-      -0.0625rem 0.0625rem 0 $dark,
-      0.0625rem 0.0625rem 0 $dark;  }
+    @include text-shadow(0.0625rem, 0.0625rem, 0, $dark);
+  }
 
   .question {
     width: 600px;
@@ -36,11 +44,8 @@ body {
     .question-title {
       text-align: center;
       color: #f3f3f3;
-      text-shadow:
-        -0.03125rem -0.03125rem 0 $dark,
-        0.03125rem -0.03125rem 0 $dark,
-        -0.03125rem 0.03125rem 0 $dark,
-        0.03125rem 0.03125rem 0 $dark;    }
+      @include text-shadow(0.03125rem, 0.03125rem, 0, $dark)
+    }
 
     &-answers {
       display: flex;
