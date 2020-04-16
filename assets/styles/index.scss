@@ -1,9 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 $blue: #111f5a;
 $bluegray: #b5bcdd;
-$correct: #24a484;
+$correct: #12a55e;
+$correcttext: #fff;
 $wrong: #a41e2d;
 $dark: #11131c;
+$whitegray: #f3f3f3;
 
 // mixed use of interpolation is to prevent the '-' being a
 //   mathematical opearator. interpolation is not needed for
@@ -43,7 +45,7 @@ body {
 
     .question-title {
       text-align: center;
-      color: #f3f3f3;
+      color: $whitegray;
       @include text-shadow(0.03125rem, 0.03125rem, 0, $dark)
     }
 
@@ -53,20 +55,25 @@ body {
       margin: 1rem 0;
 
       label {
+        display: flex;
         padding: 1rem;
         margin: 0.33rem 0;
         color: $dark;
         background-color: $bluegray;
+        font-size: 1.25rem;
         font-weight: bold;
+        align-items: center;
 
         &.correct {
           background-color: $correct;
-          color: $bluegray;
+          color: $correcttext;
+          @include text-shadow(0.015625rem, 0.015625rem, 0, $dark)
         }
 
         &.incorrect {
           background-color: $wrong;
-          color: $bluegray;
+          color: $whitegray;
+          @include text-shadow(0.015625rem, 0.015625rem, 0, $dark)
         }
       }
     }
