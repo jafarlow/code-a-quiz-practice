@@ -81,6 +81,9 @@ body {
     &-actions {
       display: flex;
       justify-content: flex-end;
+
+      #qcounter {
+        margin: auto auto auto 0;
       }
     }
   }
@@ -93,6 +96,7 @@ body {
 
   .hide {
     display: none;
+  }
 }
 
 button {
@@ -100,6 +104,7 @@ button {
   font-weight: bold;
   background-color: lightblue;
   color: $dark;
+  padding: 0.75rem;
 }
 
 input.answer {

@@ -8,6 +8,8 @@ let answersElement = document.getElementById("answers")
 let actionButton = document.getElementById("action-button")
 let nextButton = document.getElementById("next-button")
 let resetButton = document.getElementById("reset-button")
+let questionNumber = document.getElementById("qnum")
+let totalQuestions = document.getElementById("total-qs")
 
 const getQuestions = function () {
   // "request" below is often seen as "xhr"
@@ -51,6 +53,11 @@ const displayQuestion = function (question) {
 
     answersElement.appendChild(label)
   })
+
+  // uses type coercion to convert the id into a number
+  questionNumber.innerText = Number(question.id) + 1
+  // writing this part in JS instead of hardcoding in HTML allows for dynamic updating of the JSON file
+  totalQuestions.innerText = questions.length
 }
 
 actionButton.addEventListener("click", function () {
