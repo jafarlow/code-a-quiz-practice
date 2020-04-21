@@ -7,6 +7,12 @@ $wrong: #a41e2d;
 $dark: #11131c;
 $whitegray: #f3f3f3;
 
+@font-face {
+  font-family: "Ringbearer";
+  src: url("../../public/Ringbearer.woff") format("woff"),
+       url("../../public/Ringbearer.TFF") format("truetype");
+}
+
 // mixed use of interpolation is to prevent the '-' being a
 //   mathematical opearator. interpolation is not needed for
 //   positive values
@@ -21,6 +27,7 @@ $whitegray: #f3f3f3;
 body {
   margin: 0;
   background-color: $blue;
+  font-family: "Ringbearer";
 }
 
 .quiz {
@@ -59,7 +66,7 @@ body {
         color: $dark;
         background-color: $bluegray;
         font-size: 1.25rem;
-        font-weight: bold;
+        // font-weight: bold;
         align-items: center;
 
         &.correct {
@@ -109,11 +116,19 @@ input.answer {
   margin-right: 1rem;
 }
 
+#reset-button {
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+}
+
 @media only screen and (max-width: 415px) {
   .quiz {
     h1 {
       margin: 2.5rem auto 1rem auto;
       text-align: center;
+    }
+    h2 {
+      font-size: 1.75rem;
     }
     .question {
       margin-left: 1rem;
