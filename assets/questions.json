@@ -193,6 +193,105 @@
         }
       ],
       "correct": "3"
+    },
+    {
+      "id": "10",
+      "title": "Which major region was NOT featured in the 'Lord of the Rings' trilogy?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "Gondor"
+        },
+        {
+          "id": "1",
+          "answer": "Eriador"
+        },
+        {
+          "id": "2",
+          "answer": "Rhovanion"
+        },
+        {
+          "id": "3",
+          "answer": "Rohan"
+        }
+      ],
+      "correct": "2"
+    },
+    {
+      "id": "11",
+      "title": "Who forged the Silmarils?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "Fëanor"
+        },
+        {
+          "id": "1",
+          "answer": "Fingolfin"
+        },
+        {
+          "id": "2",
+          "answer": "Finarfin"
+        },
+        {
+          "id": "3",
+          "answer": "Finwë"
+        }
+      ],
+      "correct": "0"
+    },
+    {
+      "id": "12",
+      "title": "True or false: Bilbo's house, Bag End, is located in Buckland.",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "True"
+        },
+        {
+          "id": "1",
+          "answer": "False"
+        }
+      ],
+      "correct": "1"
+    },
+    {
+      "id": "13",
+      "title": "In which battle did Gandalf come to the aid of Rohan?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "Battle of the Hornburg"
+        },
+        {
+          "id": "1",
+          "answer": "Battle of the Pelennor Fields"
+        },
+        {
+          "id": "2",
+          "answer": "Battle of Isengard"
+        }
+      ],
+      "correct": "0"
+    },
+    {
+      "id": "14",
+      "title": "Which Led Zeppelin song is named for a location in Middle-Earth?",
+      "answers": [
+        {
+          "id": "0",
+          "answer": "Black Mountain Side"
+        },
+        {
+          "id": "1",
+          "answer": "Kashmir"
+        },
+        {
+          "id": "2",
+          "answer": "Misty Mountain Hop"
+        }
+      ],
+      "correct": "2"
     }
   ]
 }
