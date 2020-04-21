@@ -39,8 +39,10 @@ const displayQuestion = function (question) {
     let label = document.createElement("label")
     let answerInput = document.createElement("input")
 
+    // adds the following HTML attributes to each element
     answerInput.setAttribute("type", "radio")
     answerInput.setAttribute("name", "answer")
+    answerInput.setAttribute("onClick", "enableButton(this)")
 
     // answer.id accesses the JSON
     answerInput.setAttribute("value", answer.id)
@@ -58,6 +60,13 @@ const displayQuestion = function (question) {
   questionNumber.innerText = Number(question.id) + 1
   // writing this part in JS instead of hardcoding in HTML allows for dynamic updating of the JSON file
   totalQuestions.innerText = questions.length
+}
+
+// allows user to "submit" only if an answer has been chosen
+const enableButton = function(radioButton) {
+  if (radioButton.checked) {
+    actionButton.disabled = false
+  }
 }
 
 actionButton.addEventListener("click", function () {
@@ -82,6 +91,9 @@ actionButton.addEventListener("click", function () {
   nextButton.classList.remove("hide")
   // hides the "Submit" button
   this.classList.add("hide")
+  // turns off the button for the next question until enableButton
+    // has been run again
+  actionButton.disabled = true
 })
 
 nextButton.addEventListener("click", function () {
