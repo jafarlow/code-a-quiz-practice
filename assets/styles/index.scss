@@ -38,7 +38,7 @@ body {
   color: $bluegray;
 
   h1 {
-    margin: 12rem auto 0 auto;
+    margin: 9rem auto 4rem auto;
     font-size: 4rem;
     font-weight: bold;
     @include text-shadow(0.0625rem, 0.0625rem, 0, $dark);
@@ -52,6 +52,7 @@ body {
       text-align: center;
       color: $whitegray;
       @include text-shadow(0.03125rem, 0.03125rem, 0, $dark)
+      margin-bottom: 2rem;
     }
 
     &-answers {
@@ -71,12 +72,14 @@ body {
         &.correct {
           background-color: $correct;
           color: $correcttext;
+          font-weight: bold;
           @include text-shadow(0.015625rem, 0.015625rem, 0, $dark)
         }
 
         &.incorrect {
           background-color: $wrong;
           color: $whitegray;
+          font-weight: bold;
           @include text-shadow(0.015625rem, 0.015625rem, 0, $dark)
         }
       }
