@@ -3,6 +3,7 @@
     {
       "id": "0",
       "title": "Are they taking the Hobbits to Isengard?",
+      "learn": "https://www.youtube.com/watch?v=V77Zi5r4O3s",
       "answers": [
         {
           "id": "0",
@@ -17,7 +18,8 @@
     },
     {
       "id": "1",
-      "title": "Where were the shards of Narsil reforged?",
+      "title": "Where were the shards of Narsil reforged into Andúril?",
+      "learn": "http://tolkiengateway.net/wiki/And%C3%BAril#History",
       "answers": [
         {
           "id": "0",
@@ -37,6 +39,7 @@
     {
       "id": "2",
       "title": "What does Bilbo have in his pocket?",
+      "learn": "https://www.youtube.com/watch?v=QMD2ko2I75A",
       "answers": [
         {
           "id": "0",
@@ -60,6 +63,7 @@
     {
       "id": "3",
       "title": "Where is the tower of Orthanc located?",
+      "learn": "https://lotr.fandom.com/wiki/Orthanc",
       "answers": [
         {
           "id": "0",
@@ -79,6 +83,7 @@
     {
       "id": "4",
       "title": "Who listed below was not a ring-bearer?",
+      "learn": "https://lotr.fandom.com/wiki/Ring-bearer#List_of_Ring-bearers",
       "answers": [
         {
           "id": "0",
@@ -102,6 +107,7 @@
     {
       "id": "5",
       "title": "Complete the following phrase. 'Fool of a...'",
+      "learn": "https://www.youtube.com/watch?v=Mfws7_Ezsiw",
       "answers": [
         {
           "id": "0",
@@ -121,6 +127,7 @@
     {
       "id": "6",
       "title": "What is the capital city of Rohan?",
+      "learn": "https://lotr.fandom.com/wiki/Edoras",
       "answers": [
         {
           "id": "0",
@@ -140,6 +147,7 @@
     {
       "id": "7",
       "title": "What is the name of the inn where Frodo was supposed to meet Gandalf?",
+      "learn": "https://youtu.be/MpOF1NHowdQ?t=92",
       "answers": [
         {
           "id": "0",
@@ -159,6 +167,7 @@
     {
       "id": "8",
       "title": "True or false: Saruman was the chief of the wizards.",
+      "learn": "https://lotr.fandom.com/wiki/Saruman",
       "answers": [
         {
           "id": "0",
@@ -174,6 +183,7 @@
     {
       "id": "9",
       "title": "How many dwarves did Bilbo travel with in 'The Hobbit'?",
+      "learn": "https://lotr.fandom.com/wiki/Thorin_and_Company",
       "answers": [
         {
           "id": "0",
@@ -197,6 +207,7 @@
     {
       "id": "10",
       "title": "Which region was NOT featured in the 'Lord of the Rings' trilogy?",
+      "learn": "https://i.imgur.com/JCiXqGQ.jpg",
       "answers": [
         {
           "id": "0",
@@ -208,7 +219,7 @@
         },
         {
           "id": "2",
-          "answer": "Rhovanion"
+          "answer": "Rhûn"
         },
         {
           "id": "3",
@@ -220,6 +231,7 @@
     {
       "id": "11",
       "title": "Who forged the Silmarils?",
+      "learn": "https://lotr.fandom.com/wiki/Silmarils",
       "answers": [
         {
           "id": "0",
@@ -243,6 +255,7 @@
     {
       "id": "12",
       "title": "True or false: Bilbo's house, Bag End, is located in Buckland.",
+      "learn": "https://lotr.fandom.com/wiki/Bag_End",
       "answers": [
         {
           "id": "0",
@@ -258,6 +271,7 @@
     {
       "id": "13",
       "title": "In which battle did Gandalf come to the aid of Rohan?",
+      "learn": "https://lotr.fandom.com/wiki/Battle_of_the_Hornburg#The_battle",
       "answers": [
         {
           "id": "0",
@@ -276,7 +290,8 @@
     },
     {
       "id": "14",
-      "title": "Which Led Zeppelin song is named for a location in Middle-Earth?",
+      "title": "Which Led Zeppelin song references Mordor & Gollum?",
+      "learn": "https://www.azlyrics.com/lyrics/ledzeppelin/rambleon.html",
       "answers": [
         {
           "id": "0",
@@ -284,11 +299,11 @@
         },
         {
           "id": "1",
-          "answer": "Kashmir"
+          "answer": "Misty Mountain Hop"
         },
         {
           "id": "2",
-          "answer": "Misty Mountain Hop"
+          "answer": "Ramble On"
         }
       ],
       "correct": "2"
