@@ -4,6 +4,7 @@ let currentQuestion
 let score = 0
 
 let questionTitleElement = document.getElementById("title")
+let learnMoreElement = document.getElementById("learn")
 let answersElement = document.getElementById("answers")
 let actionButton = document.getElementById("action-button")
 let nextButton = document.getElementById("next-button")
@@ -30,10 +31,19 @@ const getQuestions = function () {
 const displayQuestion = function (question) {
   questionTitleElement.innerHTML = ""
   answersElement.innerHTML = ""
+  learnMoreElement.innerHTML = ""
 
   // question.title is accessing the JSON
   let questionTitle = document.createTextNode(question.title)
   questionTitleElement.appendChild(questionTitle)
+
+  let learnLink = document.createElement("a")
+  let anchorText = document.createTextNode("Learn more (external link)")
+  learnLink.setAttribute("href", question.learn)
+  learnLink.setAttribute("target", "_blank")
+  learnLink.setAttribute("rel", "external nofollow noopener noreferrer")
+  learnLink.appendChild(anchorText)
+  learnMoreElement.appendChild(learnLink)
 
   question.answers.forEach(answer => {
     let label = document.createElement("label")
@@ -87,6 +97,10 @@ actionButton.addEventListener("click", function () {
   }
 
   currentQuestion++
+  // hides the question to free up screen space
+  questionTitleElement.classList.add("hide")
+  // shows the "Learn More" link upon answer submition
+  learnMoreElement.classList.remove("hide")
   // shows the "Next Question" button
   nextButton.classList.remove("hide")
   // hides the "Submit" button
@@ -105,6 +119,11 @@ nextButton.addEventListener("click", function () {
     return
   }
   displayQuestion(questions[currentQuestion])
+  // shows the next question
+  questionTitleElement.classList.remove("hide")
+  // hides the learn more link, which will be revealed after answer
+    // submition
+  learnMoreElement.classList.add("hide")
   // shows the "Next Question" button
   actionButton.classList.remove("hide")
   // hides the "Submit" button
