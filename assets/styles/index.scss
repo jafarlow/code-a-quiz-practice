@@ -48,11 +48,16 @@ body {
     width: 37.5rem;
     margin: 1rem auto auto auto;
 
-    .question-title {
+    &-title {
       text-align: center;
       color: $whitegray;
       @include text-shadow(0.03125rem, 0.03125rem, 0, $dark)
       margin-bottom: 2rem;
+    }
+
+    &-learn {
+      font-size: 1.5rem;
+      text-align: center;
     }
 
     &-answers {
