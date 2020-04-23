@@ -37,13 +37,13 @@ const displayQuestion = function (question) {
   let questionTitle = document.createTextNode(question.title)
   questionTitleElement.appendChild(questionTitle)
 
-  let learnLink = document.createElement("a")
+  // let learnLink = document.createElement("a")
   let anchorText = document.createTextNode("Learn more (external link)")
-  learnLink.setAttribute("href", question.learn)
-  learnLink.setAttribute("target", "_blank")
-  learnLink.setAttribute("rel", "external nofollow noopener noreferrer")
-  learnLink.appendChild(anchorText)
-  learnMoreElement.appendChild(learnLink)
+  learnMoreElement.setAttribute("href", question.learn)
+  learnMoreElement.setAttribute("target", "_blank")
+  learnMoreElement.setAttribute("rel", "external nofollow noopener noreferrer")
+  learnMoreElement.appendChild(anchorText)
+  // learnMoreElement.appendChild(learnLink)
 
   question.answers.forEach(answer => {
     let label = document.createElement("label")
@@ -97,14 +97,14 @@ actionButton.addEventListener("click", function () {
   }
 
   currentQuestion++
-  // hides the question to free up screen space
-  questionTitleElement.classList.add("hide")
+  // visuallyhiddens the question to free up screen space
+  questionTitleElement.classList.add("visuallyhidden")
   // shows the "Learn More" link upon answer submition
-  learnMoreElement.classList.remove("hide")
+  learnMoreElement.classList.remove("visuallyhidden")
   // shows the "Next Question" button
-  nextButton.classList.remove("hide")
-  // hides the "Submit" button
-  this.classList.add("hide")
+  nextButton.classList.remove("visuallyhidden")
+  // visuallyhiddens the "Submit" button
+  this.classList.add("visuallyhidden")
   // turns off the button for the next question until enableButton
     // has been run again
   actionButton.disabled = true
@@ -112,22 +112,22 @@ actionButton.addEventListener("click", function () {
 
 nextButton.addEventListener("click", function () {
   if (currentQuestion == questionsCount) {
-    document.getElementById("question-element").classList.add("hide")
-    document.getElementById("scores").classList.remove("hide")
+    document.getElementById("question-element").classList.add("visuallyhidden")
+    document.getElementById("scores").classList.remove("visuallyhidden")
     document.getElementById("score").innerHTML = score + "/" + questionsCount
-    resetButton.classList.remove("hide")
+    resetButton.classList.remove("visuallyhidden")
     return
   }
   displayQuestion(questions[currentQuestion])
   // shows the next question
-  questionTitleElement.classList.remove("hide")
-  // hides the learn more link, which will be revealed after answer
+  questionTitleElement.classList.remove("visuallyhidden")
+  // visuallyhiddens the learn more link, which will be revealed after answer
     // submition
-  learnMoreElement.classList.add("hide")
+  learnMoreElement.classList.add("visuallyhidden")
   // shows the "Next Question" button
-  actionButton.classList.remove("hide")
-  // hides the "Submit" button
-  this.classList.add("hide")
+  actionButton.classList.remove("visuallyhidden")
+  // visuallyhiddens the "Submit" button
+  this.classList.add("visuallyhidden")
 })
 
 // Initialization
