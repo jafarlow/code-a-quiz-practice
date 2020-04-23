@@ -3,13 +3,18 @@ let questionsCount
 let currentQuestion
 let score = 0
 
+// main content
 let questionTitleElement = document.getElementById("title")
 let learnMoreElement = document.getElementById("learn")
 let answersElement = document.getElementById("answers")
+
+// buttons
 let actionButton = document.getElementById("action-button")
 let nextButton = document.getElementById("next-button")
 let scoreButton = document.getElementById("score-button")
 let resetButton = document.getElementById("reset-button")
+
+// for question counter display
 let questionNumber = document.getElementById("qnum")
 let totalQuestions = document.getElementById("total-qs")
 
@@ -30,9 +35,9 @@ const getQuestions = function () {
 }
 
 const displayQuestion = function (question) {
-  questionTitleElement.innerHTML = ""
-  answersElement.innerHTML = ""
-  learnMoreElement.innerHTML = ""
+  questionTitleElement.innerText = ""
+  answersElement.innerText = ""
+  learnMoreElement.innerText = ""
 
   // question.title is accessing the JSON
   let questionTitle = document.createTextNode(question.title)
@@ -101,12 +106,14 @@ actionButton.addEventListener("click", function () {
   questionTitleElement.classList.add("visuallyhidden")
   // shows the "Learn More" link upon answer submition
   learnMoreElement.classList.remove("visuallyhidden")
+
   // determines which button to show
   if (currentQuestion == questionsCount) {
     scoreButton.classList.remove("visuallyhidden")
   } else {
     nextButton.classList.remove("visuallyhidden")
   }
+
   // hides the "Submit" button
   this.classList.add("visuallyhidden")
   // turns off the button for the next question until enableButton
@@ -115,13 +122,6 @@ actionButton.addEventListener("click", function () {
 })
 
 nextButton.addEventListener("click", function () {
-  // if (currentQuestion == questionsCount) {
-  //   document.getElementById("question-element").classList.add("visuallyhidden")
-  //   document.getElementById("scores").classList.remove("visuallyhidden")
-  //   document.getElementById("score").innerHTML = score + "/" + questionsCount
-  //   resetButton.classList.remove("visuallyhidden")
-  //   return
-  // }
   displayQuestion(questions[currentQuestion])
   // shows the next question
   questionTitleElement.classList.remove("visuallyhidden")
@@ -137,7 +137,7 @@ nextButton.addEventListener("click", function () {
 scoreButton.addEventListener("click", function() {
   document.getElementById("question-element").classList.add("visuallyhidden")
   document.getElementById("scores").classList.remove("visuallyhidden")
-  document.getElementById("score").innerHTML = score + "/" + questionsCount
+  document.getElementById("score").innerText = score + "/" + questionsCount
   resetButton.classList.remove("visuallyhidden")
 })
 
