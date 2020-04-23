@@ -17,17 +17,17 @@
         <h1>It's a Tolkien quiz!</h1>
         <section class="question" id="question-element">
           <h2 class="question-title" id="title"></h2>
-          <h3 class="question-learn hide" id="learn"></h3>
+          <a class="question-learn visuallyhidden" id="learn"></a>
           <div class="question-answers" id="answers"></div>
           <div class="question-actions">
             <p id="qcounter">Question <span id="qnum"></span> of <span id="total-qs"></span> </p>
             <button type="submit" name="button" class="button" id="action-button" disabled>Submit</button>
-            <button type="button" name="button" class="button hide" id="next-button">Next Question</button>
+            <button type="button" name="button" class="button visuallyhidden" id="next-button">Next Question</button>
           </div>
         </section>
-        <div class="score hide" id="scores">
+        <div class="score visuallyhidden" id="scores">
           You scored: <span id=score></span>
-          <button type="button" name="button" class="button hide" id="reset-button" onclick="window.location.reload()">Retry</button>
+          <button type="button" name="button" class="button visuallyhidden" id="reset-button" onclick="window.location.reload()">Retry</button>
         </div>
       </main>
 
