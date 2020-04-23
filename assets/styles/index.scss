@@ -45,8 +45,6 @@ body {
 
 .quiz {
   @include flex-col()
-  // display: flex;
-  // flex-direction: column;
   justify-content: column;
   align-items: center;
   color: $bluegray;
@@ -62,8 +60,6 @@ body {
     width: 37.5rem;
     margin: 1rem auto auto auto;
     @include flex-col()
-    // display: flex;
-    // flex-direction: column;
 
     &-title {
       text-align: center;
@@ -79,8 +75,6 @@ body {
 
     &-answers {
       @include flex-col()
-      // display: flex;
-      // flex-direction: column;
       margin: 1rem 0;
 
       label {
@@ -161,18 +155,16 @@ input.answer {
 @media only screen and (max-width: 25.9375rem) {
   .quiz {
     h1 {
-      font-size: 3rem;
-      margin: 2.5rem auto 1rem auto;
+      font-size: 2.25rem;
+      margin: 2.5rem auto 0 auto;
       text-align: center;
-    }
-    h2 {
-      font-size: 1.75rem;
     }
     .question {
       margin-left: 1rem;
       margin-right: 1rem;
       &-title {
-        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 0;
       }
       &-answers {
         label {
