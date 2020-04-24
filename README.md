@@ -1,4 +1,5 @@
-DAY 3 - How to code a quiz in Javascript
+Quiz built from a YouTube code-along exercise, which I have greatly
+expanded, refactored, and improved. The original project video from
+Tyler Potts can be viewed here:
 
-From Tyler Potts
 https://www.youtube.com/watch?v=XYpZTBzxkOY
