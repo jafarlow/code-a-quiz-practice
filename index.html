@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Tolkien Quiz</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+      <main class="quiz">
+        <h1>It's a Tolkien quiz!</h1>
+
+        <!-- main content -->
+        <section class="question" id="question-element">
+          <h2 class="question-title" id="title"></h2>
+          <a class="question-learn visuallyhidden" id="learn"></a>
+          <div class="question-answers" id="answers"></div>
+
+          <!-- buttons & question counter display -->
+          <div class="question-actions">
+            <p id="qcounter">Question <span id="qnum"></span> of <span id="total-qs"></span> </p>
+
+            <button type="submit" name="button" class="button" id="action-button" disabled>Submit</button>
+
+            <button type="button" name="button" class="button visuallyhidden" id="next-button">Next Question</button>
+
+            <button type="button" name="button" class="button visuallyhidden" id="score-button">View score</button>
+          </div>
+        </section>
+
+        <!-- end of quiz content -->
+        <div class="score visuallyhidden" id="scores">
+          You scored: <span id=score></span>
+          <button type="button" name="button" class="button visuallyhidden" id="reset-button" onclick="window.location.reload()">Retry</button>
+        </div>
+      </main>
+
+      <script type="text/javascript" src="./assets/scripts/events.js"></script>
+    </body>
+</html>
