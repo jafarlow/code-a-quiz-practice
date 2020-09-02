@@ -11,6 +11,7 @@ $whitegray: #f3f3f3;
   font-family: "Ringbearer";
   src: url("../../public/Ringbearer.woff") format("woff"),
        url("../../public/Ringbearer.TFF") format("truetype");
+  font-display: swap;
 }
 
 // mixed use of interpolation is to prevent the '-' being a
